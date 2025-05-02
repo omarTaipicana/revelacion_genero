@@ -1,0 +1,321 @@
+/* src/App.css */
+.app {
+  background-image: url("https://blunki.com.ar/img/ybc_blog/post/ideas-para-revelar-el-sexo-de-tu-bebe.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  color: white;
+  text-shadow: 2px 2px 4px #000;
+}
+
+.content {
+  padding: 2rem;
+  border-radius: 1rem;
+  max-width: 800px;
+  width: 100%;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+
+.baby-text-container {
+  margin-bottom: 2rem;
+}
+
+.baby-text {
+  font-family: "Fredoka One", cursive;
+  font-size: 3rem;
+  margin: 0.5rem 0;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.baby-text.pink {
+  color: #f48fb1; /* rosado suave */
+}
+
+.baby-text.blue {
+  color: #81d4fa; /* celeste claro */
+}
+
+.baby-text.color_y {
+  color: #297fb99c; /* celeste claro */
+}
+
+.play-button {
+  margin: 0 auto;
+  width: 60px;
+  height: 60px;
+  background-color: #2980b9;
+  border: none;
+  border-radius: 50%; /* Hacer el botón circular */
+  cursor: pointer;
+  position: relative; /* Para posicionar el triángulo */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1em;
+}
+
+.play-button::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 15px solid white; /* Crear el triángulo */
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  position: absolute;
+}
+
+.play-button:hover {
+  background-color: #3498db;
+}
+
+.guess-section {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+.guess {
+  flex: 1 1 300px;
+  padding: 1.5rem;
+  border-radius: 3rem;
+  text-align: center;
+  font-family: "Fredoka One", cursive;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  backdrop-filter: blur(5px);
+}
+
+.guess h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.guess span {
+  font-size: 1rem;
+}
+
+.guess-girl {
+  background-color: rgba(244, 143, 177, 0.4); /* rosa translúcido */
+  color: #fff;
+  border: 3px dashed #f48fb1;
+}
+
+.guess-boy {
+  background-color: rgba(129, 212, 250, 0.4); /* celeste translúcido */
+  color: #fff;
+  border: 3px dashed #81d4fa;
+}
+
+.guess:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+.countdown {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  font-family: "Fredoka One", cursive;
+  color: #5c14e2; /* lavanda claro: neutro entre rosa y azul */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+
+
+.btn-location {
+  font-family: 'Fredoka One', cursive;
+  font-size: 1.2rem;
+  padding: 0.8rem 2rem;
+  margin-top: 2rem;
+  background: linear-gradient(90deg, #f48fb1, #81d4fa);
+  color: white;
+  border: none;
+  border-radius: 2rem;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-location:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+}
+
+
+
+
+
+
+
+.video-container {
+  aspect-ratio: 16 / 9;
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+.video-container iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5rem;
+}
+
+.message {
+  font-family: "Fredoka One", cursive;
+  font-size: 1.8rem;
+  color: #fff;
+  text-align: center;
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: rgba(84, 75, 75, 0.344);
+  border-radius: 2rem;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(4px);
+  animation: fadeInUp 1s ease forwards;
+}
+
+
+
+.corner-gif {
+  position: fixed;
+  width: 80px; /* ajusta el tamaño según necesidad */
+  z-index: 9999;
+  pointer-events: none; /* para que no interfiera con clics */
+  opacity: 0.9;
+}
+
+.corner-gif {
+  position: fixed;
+  width: 10rem;
+  z-index: 9999;
+  pointer-events: none;
+  opacity: 0.9;
+}
+
+/* Posiciones con espacio desde los bordes */
+.top-left {
+  top: 2rem;
+  left: 2rem;
+}
+
+.top-right {
+  top: 2rem;
+  right: 2rem;
+}
+
+.bottom-left {
+  bottom: 2rem;
+  left: 2rem;
+}
+
+.bottom-right {
+  bottom: 2rem;
+  right: 2rem;
+}
+
+
+
+
+
+/* ====== ESTILOS RESPONSIVOS PARA MÓVILES ====== */
+@media (max-width: 768px) {
+  .app {
+    padding: 1rem;
+    background-position: center top;
+  }
+
+  .content {
+    padding: 1rem;
+  }
+
+  .baby-text {
+    font-size: 2rem;
+  }
+
+  .countdown {
+    font-size: 2rem;
+  }
+
+  .guess-section {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .guess {
+    flex: 1 1 100%;
+    font-size: 1rem;
+    padding: 1rem;
+  }
+
+  .btn-location {
+    font-size: 1rem;
+    padding: 0.6rem 1.5rem;
+  }
+
+  .message {
+    font-size: 1.2rem;
+    padding: 0.8rem;
+  }
+
+  .corner-gif {
+    width: 6rem;
+  }
+
+  .top-left,
+  .top-right,
+  .bottom-left,
+  .bottom-right {
+    top: 1rem;
+    bottom: 1rem;
+    left: 1rem;
+    right: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .baby-text {
+    font-size: 1.6rem;
+  }
+
+  .countdown {
+    font-size: 1.5rem;
+  }
+
+  .btn-location {
+    font-size: 0.9rem;
+    padding: 0.5rem 1.2rem;
+  }
+
+  .message {
+    font-size: 1rem;
+  }
+
+  .play-button {
+    width: 50px;
+    height: 50px;
+  }
+
+  .play-button::before {
+    border-left: 12px solid white;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+  }
+
+  .corner-gif {
+    width: 4.5rem;
+  }
+}
