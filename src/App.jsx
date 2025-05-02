@@ -59,9 +59,9 @@ function App() {
             Te invitamos a compartir este bello momento
           </h2>
           <h2 className="baby-text ">
-            <span className="baby-text blue"> Xavi </span>{" "}
-            <span className="baby-text color_y">y</span>{" "}
-            <span className="baby-text pink">Lizz</span>
+            <span className="baby-text nombre xavi"> Xavi </span>{" "}
+            <span className="baby-text nombre color_y">y</span>{" "}
+            <span className="baby-text nombre pink">Lizz</span>
           </h2>
 
           <h2 className="baby-text blue">

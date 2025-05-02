@@ -44,12 +44,23 @@ h1 {
 }
 
 .baby-text.blue {
-  color: #81d4fa; /* celeste claro */
+  color: #46b9ee; /* celeste claro */
 }
+
+.baby-text.xavi {
+  color: #1baff3; /* celeste claro */
+}
+
 
 .baby-text.color_y {
   color: #297fb99c; /* celeste claro */
 }
+
+
+.baby-text.nombre {
+font-size: 3rem;
+}
+
 
 .play-button {
   margin: 0 auto;
