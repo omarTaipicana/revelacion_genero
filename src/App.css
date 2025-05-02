@@ -135,10 +135,8 @@ h1 {
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
 }
 
-
-
 .btn-location {
-  font-family: 'Fredoka One', cursive;
+  font-family: "Fredoka One", cursive;
   font-size: 1.2rem;
   padding: 0.8rem 2rem;
   margin-top: 2rem;
@@ -155,12 +153,6 @@ h1 {
   transform: scale(1.05);
   box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
 }
-
-
-
-
-
-
 
 .video-container {
   aspect-ratio: 16 / 9;
@@ -187,8 +179,6 @@ h1 {
   backdrop-filter: blur(4px);
   animation: fadeInUp 1s ease forwards;
 }
-
-
 
 .corner-gif {
   position: fixed;
@@ -227,15 +217,15 @@ h1 {
   right: 2rem;
 }
 
-
-
-
-
 /* ====== ESTILOS RESPONSIVOS PARA MÓVILES ====== */
 @media (max-width: 768px) {
   .app {
     padding: 1rem;
     background-position: center top;
+  }
+
+  .corner-gif {
+    display: none;
   }
 
   .content {
@@ -290,7 +280,9 @@ h1 {
   .baby-text {
     font-size: 1.6rem;
   }
-
+  .corner-gif {
+    display: none;
+  }
   .countdown {
     font-size: 1.5rem;
   }
